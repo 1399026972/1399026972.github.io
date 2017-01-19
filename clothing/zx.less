@@ -1,0 +1,195 @@
+@import "_css";
+body{
+.yahei();	
+}
+// nav开始
+.nav{
+	.hline(100px);
+	h1{
+		.fl();
+		.bold(true);
+		.size(30px);
+		.leftlogo{
+           .c(#ffc001);
+		}
+		.rightlogo{
+			.c(#ccc);
+			.ml(10px);
+		}
+	}
+	ul{
+		.fr();
+		li:hover>a,.cur a{
+			.c(#ffc001);
+		}
+		li{
+			.fl();
+			.t-c();
+			.w(120px);
+			>a{
+				.size(16px);
+				.c(#161616);
+			}
+		}
+		.textarea{
+			.p-r();
+			&:hover .area{
+              .d-b();
+			}
+			.area{
+				.z(2);
+				.p-a();
+				.l(0px);
+				.t(80px);
+				.d-b();
+				.w(120px);
+				.hline(50px);
+				.bg(#ffc001);
+				.d-n();
+				&:before{
+					.cnt();
+					.w(0);
+					.h(0);
+					.bd(5px solid  transparent);
+					.bd-b-c(#ffc001);
+					.p-a();
+					.t(-10px);
+					.l(50px);
+				}
+				a{
+					.c(#fff);
+				}
+			}
+		}
+	}
+}
+// nav结束
+// 关注安全开始
+.aq{
+	.bbox();
+	.pt(100px);
+	.h(585px);
+	.aqleft{
+		.fl();
+		.w(50%);
+	}
+	.aqright{
+		.fl();
+		.w(50%);
+		.bbox();
+		.pl(10px);
+		.pt(50px);
+		.pr(190px);
+		h4{
+			&:hover a{
+               .c(#ffc001);
+			}
+			a{
+				.c(#222);
+				.line(56px);
+				.size(18px);
+			}
+		}
+		p{
+			.size(14px);
+			.c(#666);
+			.line(42px);
+		}
+
+	}
+}
+// 关注安全结束
+// 新闻开始
+.xwn{
+	.h(880px);
+	ul{
+		.h(100%);
+		li{
+          .h(20%);
+          .bbox();
+          .bd-b(1px dotted #666);
+          .pt(50px);
+          &:nth-child(5){
+          	.bd(0);
+          }
+          &:nth-child(1),&:nth-child(2){
+          	a:after{
+          		.cnt("顶");
+          		.d-b();
+          		.w(20px);
+          		.h(20px);
+          		.bg(red);
+          		.fl();
+          		.c(#fff);
+          		.radius(5px);
+          		.line(20px);
+          		.t-c();
+          		.mt(5px);
+          		.mr(5px);
+          	}
+          }
+          p{
+          	&:hover a{
+              .size(18px);
+              .c(#ffc001);
+          	}
+          	.size(14px);
+          	.c(#444);
+          	.line(24px);
+          	a{
+          		.c(#444);
+          		.line(30px)
+          	}
+          }
+          span{
+          	.mr(20px);
+          	.t-c();
+          	.fl();
+          	.w(84px);
+          	.h(84px);
+          	.bg(#f2f2f2);
+          	.bbox();
+          	.pt(20px);
+          	b{
+          		.d-b();
+          		.size(18px);
+          	}
+          }
+		}
+	}
+}
+// 新闻结束
+// 脚部开始
+.footer{
+	.h(275px);
+	.bg(#414141);
+	.t-c();
+	.bbox();
+	.p(30px 0);
+	ul{
+		.w(440px);
+		.m(20px auto);
+		li{
+			.fl();
+			.w(20%);
+			
+			a{
+              .c(#aaa);
+              .size(12px);
+              .bd-r(1px solid #aaa);
+              .bbox();
+              .pr(20px);
+			}
+		}
+	}
+	p{
+		.clear();
+		.line(70px);
+		.size(12px);
+		.c(#aaa);
+		a{
+			.c(#aaa);
+		}
+	}
+}
+// 脚部结束

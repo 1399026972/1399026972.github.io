@@ -1,0 +1,531 @@
+@import "_css";
+body{
+.yahei();	
+}
+// nav开始
+.nav{
+	.hline(100px);
+	h1{
+		.fl();
+		.bold(true);
+		.size(30px);
+		.leftlogo{
+           .c(#ffc001);
+		}
+		.rightlogo{
+			.c(#ccc);
+			.ml(10px);
+		}
+	}
+	ul{
+		.fr();
+		li:hover>a,.cur a{
+			.c(#ffc001);
+		}
+		li{
+			.fl();
+			.t-c();
+			.w(120px);
+			>a{
+				.size(16px);
+				.c(#161616);
+			}
+		}
+		.textarea{
+			.p-r();
+			&:hover .area{
+              .d-b();
+			}
+			.area{
+				.z(2);
+				.p-a();
+				.l(0px);
+				.t(80px);
+				.d-b();
+				.w(120px);
+				.hline(50px);
+				.bg(#ffc001);
+				.d-n();
+				&:before{
+					.cnt();
+					.w(0);
+					.h(0);
+					.bd(5px solid  transparent);
+					.bd-b-c(#ffc001);
+					.p-a();
+					.t(-10px);
+					.l(50px);
+				}
+				a{
+					.c(#fff);
+				}
+			}
+		}
+	}
+}
+// nav结束
+// banner开始
+.banner{
+	.size(0);
+	.h(720px);
+	.p-r();
+	ul{
+		li{
+			.p-a();
+			img{
+       		.w(100%);
+        	}
+		}
+	}
+	ol{
+       li{
+       	.p-a();
+       	.t(315px);
+
+       }
+       .prev{
+       	.l(0px);
+       }
+       .next{
+       	.r(0px);
+       }
+	}
+}
+// banenr 结束
+// 品牌故事开始
+.story{
+	.bbox();
+	.pt(120px);
+	.h(750px);
+	.storyleft{
+		.w(50%);
+		.fl();
+		&:hover{
+			@keyframes bg{
+			0%{
+				.opa(1);
+			}
+			50%{
+				.opa(.8);
+			}
+			100%{
+				.opa(1);
+			}
+		}
+		animation:bg 0.5s ;
+		}
+	}
+	.storyright{
+		.w(50%);
+		.fr();
+		.bbox();
+		.pt(60px);
+		h3{
+			.line(64px);
+			.size(36px);
+		}
+		>p{
+			.size(36px);
+			.line(64px);
+			.c(#666);
+			.opa(.5);
+		}
+		div{
+			.w(485px);
+			.h(205px);
+			.bbox();
+			.p(40px 25px 0);
+			.bg(grey);
+			.mt(60px);
+			p{
+				.line(30px);
+				.size(14px);
+				.c(#fff);
+			}
+		}
+	}
+}
+// 品牌故事结束
+// new开始
+.new{
+	.h(635px);
+	.newleft{
+		.w(50%);
+		.fl();
+		.t-c();
+		.bbox();
+		.pt(50px);
+		>p{
+			.size(30px);
+			.line(54px);
+		}
+		h3{
+			.size(36px);
+		}
+		b{
+			.line(200px);
+		}
+		a{
+			.d-b();
+			.w(212px);
+			.hline(57px);
+			.m(0 auto);
+			.bd(1px solid black);
+			.c(#000);
+		}
+	}
+	.newright{
+		.w(50%);
+		.fr();
+		&:hover{
+			@keyframes bg{
+			0%{
+				.opa(1);
+			}
+			50%{
+				.opa(.8);
+			}
+			100%{
+				.opa(1);
+			}
+		}
+        animation:bg 0.5s ;
+		}
+	}
+}
+// new结束
+// 促销开始
+.cx{
+	.h(800px);
+	.bg(url(images/cx.jpg));
+	>.common{
+		.bbox();
+		.pt(100px);
+		>div{
+			// 有改动
+			a{
+				.w(360px);
+				.d-b();
+				.h(590px);
+				&:after{
+				.p-a();
+				.cnt();
+				.w(100%);
+                .d-b();
+                .lt(0);
+                .h(520px);
+                .bg(#000);
+                .opa(.5);
+                // .transition(.4s);
+			}
+				&:hover:after{
+	               @keyframes cc{
+				0%{
+					.opa(.5);
+				}
+				50%{
+					.opa(0);
+				}
+				100%{
+					.opa(.1);
+					}
+				}
+		        animation:cc 0.5s forwards;
+				}
+			}
+			
+			.p-r();
+			
+			.size(0);
+			&:nth-child(2){
+				.m(0 60px);
+			}
+				.fl();
+				.t-c();
+				h4{
+					.w(100%);
+					.hline(70px);
+					.d-b();
+					.bg(#fff);
+					.size(16px);
+					.c(#000);
+				}
+			}
+	}
+	
+}
+// 促销结束
+// 灵感开始
+.afflatus{
+	.h(948px);
+	.mt(150px);
+	.bbox();
+	.pl(3%);
+	.afflatusleft{
+		.fl();
+		.w(55%);
+	}
+	.afflatusright{
+		.fr();
+		.w(45%);
+		.bbox();
+		.pt(80px);
+		h5,h4 span{
+			.size(16px);
+			.line(50px);
+			.bold(true);
+			.h(50px);
+		}
+		h4{
+			.bd-b(1px solid #ffc001);
+			.ml(-10px);
+			.mb(20px);
+			span{
+				.line(50px);
+				.w(80px);
+				.bd-b(3px solid #ffc001);
+				.ml(13px);
+				.mt(-30px);
+				.fl();
+			}
+		}
+		p{
+			.clear();
+			.line(40px);
+		}
+		h5{
+			.mt(70px);
+		}
+		img{
+			.mt(70px);
+		}
+	}
+}
+// 灵感结束
+// 产品展示开始
+.cp{
+	.h(561px);
+	div{
+		.d-n();
+	}
+	>div{
+       .p-f();
+       .w(100%);
+       .h(100%);
+       .bg(#000);
+       .opa(.7);
+       .z(5);
+       .lt(0);
+	}    
+	 .tan{
+	       	.w(890px);
+	       	.h(650px);
+	       	.bg(#fff);
+	       	.p-f();
+	       	.lt(50%);
+	       	.mt(150px);
+	       	.ml(-445px);
+	       	.opa(1);
+	       	.z(8);
+	       	.bbox();
+	       	.p(80px 50px 0 80px);
+	       	.tanleft{
+	       		.fl();
+	       		.w(50%);
+	       		.h(387px);
+	       		ol{
+	       			.p-r();
+	       			li{
+	       				.p-a();
+	       				.lt(0);
+	       			}
+	       		}
+	       	}
+	       	.tanright{
+	       		.fl();
+	       		.w(50%);
+	       		small{
+	       			.size(40px);
+	       			.p-a();
+	       			.r(0);
+	       			.t(-10px);
+	       			.c-p();
+	       		}
+	       		h4{
+	       			.bd-b(1px solid #000);
+	       			.size(20px);
+	       			.c(#474747);
+	       			.line(28px);
+	       			.bold(true);
+	       		}
+	       		p{
+	       			.size(14px);
+	       			.line(20px);
+	       			.c(#767676);
+	       			.mt(20px);
+	       			>span{
+	       				.size(24px);
+	       				.pl(20px);
+	       				.c(#c30);
+	       				.bold(true);
+	       			}
+	       		}
+	       		.cun{
+	       			>span{
+	       				.c(#767676);
+	       				.size(14px);
+	       			}
+	       		}
+	       	}
+	       	ul{
+	       		.bbox();
+	       		.pt(30px);
+	       		.w(45%);
+	       		li{
+	       			.w(25%);
+	       			.fl();
+	       			.bbox();
+	       		}
+	       		.cur{
+	       			.p-r();
+	       		}
+	       	    .cur:before{
+	       				.cnt();
+	       				.d-b();
+	       				.w(0);
+	       				.h(0);
+	       				.bd(5px solid transparent);
+	       				.bd-b-c(red);
+	       				.p-a();
+	       				.l(40%);
+	       				.t(-10px);
+	       			}
+	       		.cur img{
+	       			.bd(2px solid red)
+	       		}
+	       	}
+	       		b{
+	       			.p-a();
+	       			.z(8);
+	       			.w(90px);
+	       			.h(90px);
+	       			.bg(#444);
+	       			.bbox();
+	       			.pt(10px);
+	       			.radius(50%);
+	       			.t-c();
+	       		}
+	       		b.right{
+	       			.r(-100px);
+                    .t(50%);
+                    .mt(-45px);
+                    .radius(50%);
+	       		}
+	       		b.left{
+	       			.l(-100px);
+	       			.t(50%);
+	       			.mt(-45px);
+	       		}
+	       	}
+	>ul{
+		li{
+			.p-r();
+			.fl();
+			&:nth-child(2){
+				.m(0 30px);
+			}
+			&:nth-child(3){
+				.mr(30px);
+			}
+			h4{
+               .d-b();
+               .p-a();
+               .w(210px);
+               .h(92px);
+               .bg(#fff);
+               .opa(.8);
+               .l(50%);
+               .ml(-105px);
+               .b(-40px);
+               .ellipsis();
+               .bd(1px solid #dcdcdc);
+               .t-c();
+               span{
+                 .size(14px);
+                 .c(#161616);
+                 .line(50px);
+               }
+               b{
+               	.fl();
+               	.w(100%);
+               	.t-c();
+               	.size(24px);
+               	.c(#ffc001);
+               }
+			}
+		}
+	}
+}
+// 产品展示结束
+// 公司说明开始
+.sm{
+	.t-c();
+	.h(563px);
+}
+.smul{
+	.w(500px);
+	.t-c();
+	.h(479px);
+	ul{
+		.w(400px);
+		.m(20px auto 0);
+		.size(14px);
+		.c(#333);
+		li{
+			.fl();
+			.w(34px);
+			.bbox();
+			.p(0 10px);
+			.h(100%);
+			.line(30px);
+		}
+	}
+}
+// 公司说明结束
+#ntzq{
+	.h(641px);
+}
+// 脚部开始
+.footer{
+	.h(275px);
+	.bg(#414141);
+	.t-c();
+	.bbox();
+	.p(30px 0);
+	ul{
+		.w(440px);
+		.m(20px auto);
+		li{
+			.fl();
+			.w(20%);
+			
+			a{
+              .c(#aaa);
+              .size(12px);
+              .bd-r(1px solid #aaa);
+              .bbox();
+              .pr(20px);
+			}
+		}
+	}
+	p{
+		.clear();
+		.line(70px);
+		.size(12px);
+		.c(#aaa);
+		a{
+			.c(#aaa);
+		}
+	}
+}
+// 脚部结束

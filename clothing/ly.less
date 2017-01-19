@@ -1,0 +1,220 @@
+@import "_css";
+body{
+.yahei();	
+}
+// nav开始
+.nav{
+	.hline(100px);
+	h1{
+		.fl();
+		.bold(true);
+		.size(30px);
+		.leftlogo{
+           .c(#ffc001);
+		}
+		.rightlogo{
+			.c(#ccc);
+			.ml(10px);
+		}
+	}
+	ul{
+		.fr();
+		li:hover>a,.cur a{
+			.c(#ffc001);
+		}
+		li{
+			.fl();
+			.t-c();
+			.w(120px);
+			>a{
+				.size(16px);
+				.c(#161616);
+			}
+		}
+		.textarea{
+			.p-r();
+			&:hover .area{
+              .d-b();
+			}
+			.area{
+				.z(2);
+				.p-a();
+				.l(0px);
+				.t(80px);
+				.d-b();
+				.w(120px);
+				.hline(50px);
+				.bg(#ffc001);
+				.d-n();
+				&:before{
+					.cnt();
+					.w(0);
+					.h(0);
+					.bd(5px solid  transparent);
+					.bd-b-c(#ffc001);
+					.p-a();
+					.t(-10px);
+					.l(50px);
+				}
+				a{
+					.c(#fff);
+				}
+			}
+		}
+	}
+}
+// nav结束
+// ban开始
+.ap{
+	img{
+		.w(100%);
+	}
+}
+// ban结束
+// form 开始
+.bd{
+	.h(627px);
+	.size(14px);
+	.c(#666);
+	.bbox();
+	.pt(80px);
+	form{
+		>div{
+			.clear();
+			label{
+				.fl();
+				.ml(100px);
+				.line(34px);
+				.w(60px);
+				&:nth-child(1){
+					.ml(0);
+				}
+			}
+			input{
+				.fl();
+				.w(198px);
+				.hline(34px);
+				.bbox();
+				.pl(5px);
+			}
+			span{
+				.fl();
+				.line(34px);
+				.c(red);
+				.pl(5px);
+			}
+		}
+		>label{
+			.fl();
+			.w(60px);
+		}
+		textarea{
+			.fl();
+			.w(925px);
+			.h(80px);
+			resize:none;
+		}
+		img{
+			.fl();
+			.ml(30px);
+		}
+		input{
+			.fl();
+			.w(110px);
+			.h(34px);
+		}
+		label{
+			.line(34px);
+		}
+		button{
+			.w(219px);
+			.hline(44px);
+			.t-c();
+			.bg(#ffad2b);
+			.bd(0);
+			.c(#fff);
+			.ml(60px);
+		}
+		p{
+			.line(30px);
+			.m(10px 0 15px);
+		}
+		.area{
+			.line(80px);
+		}
+		.lyp{
+			.mt(30px);
+			.bd-b(1px dotted #444); 
+		}
+		.clearfix{
+			.h(20px);
+		}
+
+	}
+	dl{
+		.w();
+		.line(32px);
+		.t-c();
+		.bbox();
+		.p(18px 0);
+		dt{
+			.d-i-b();
+			.w(78px);
+			.h(32px);
+			.bd(1px solid #666);
+			.bbox();
+		}
+		input{
+			.w(49px);
+			.h(27px);
+		}
+		dd{
+			.d-i-b();
+
+		}
+		a{
+			.d-i-b();
+			.w(54px);
+			.hline(27px);
+			.bd(1px solid #666);
+			.bbox();
+			.c(#666);
+			.t-c();
+		}
+	}
+}
+// form结束
+// 脚部开始
+.footer{
+	.h(275px);
+	.bg(#414141);
+	.t-c();
+	.bbox();
+	.p(30px 0);
+	ul{
+		.w(440px);
+		.m(20px auto);
+		li{
+			.fl();
+			.w(20%);
+			
+			a{
+              .c(#aaa);
+              .size(12px);
+              .bd-r(1px solid #aaa);
+              .bbox();
+              .pr(20px);
+			}
+		}
+	}
+	p{
+		.clear();
+		.line(70px);
+		.size(12px);
+		.c(#aaa);
+		a{
+			.c(#aaa);
+		}
+	}
+}
+// 脚部结束

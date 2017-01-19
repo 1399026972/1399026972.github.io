@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/*新的基础样式*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 整站通用样式 全站兼容标准IE8+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft Yahei;
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+q {
+  quotes: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a img {
+  border: 0;
+}
+.common {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+input::-ms-clear {
+  display: none;
+}
+/*下边三个占位符一定不能写在一起，不然会失效*/
+:-moz-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+:focus,
+:invalid {
+  outline: none;
+}
+textarea {
+  resize: none !important;
+}
+.clearfix {
+  clear: both !important;
+  float: none !important;
+  zoom: 1\9;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+/*禁用*/
+.disabled,
+[disabled] {
+  cursor: not-allowed !important;
+}
+body {
+  font-family: Microsoft Yahei;
+}
+.nav {
+  height: 100px;
+  line-height: 100px;
+}
+.nav h1 {
+  float: left;
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav h1 .leftlogo {
+  color: #ffc001;
+}
+.nav h1 .rightlogo {
+  color: #ccc;
+  margin-left: 10px;
+}
+.nav ul {
+  float: right;
+}
+.nav ul li:hover > a,
+.nav ul .cur a {
+  color: #ffc001;
+}
+.nav ul li {
+  float: left;
+  text-align: center;
+  width: 120px;
+}
+.nav ul li > a {
+  font-size: 16px;
+  color: #161616;
+}
+.nav ul .textarea {
+  position: relative;
+}
+.nav ul .textarea:hover .area {
+  display: block;
+}
+.nav ul .textarea .area {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  display: block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  background: #ffc001;
+  display: none;
+}
+.nav ul .textarea .area:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #ffc001;
+  position: absolute;
+  top: -10px;
+  left: 50px;
+}
+.nav ul .textarea .area a {
+  color: #fff;
+}
+.ap img {
+  width: 100%;
+}
+.pp {
+  height: 758px;
+  font-size: 0;
+  box-sizing: border-box;
+  padding-top: 120px;
+}
+.pp .ppleft {
+  float: left;
+  width: 540px;
+}
+.pp .ppright ul li {
+  float: left;
+}
+.pp .ppright ul li:nth-child(4) {
+  background: #ffc001;
+  width: 300px;
+  height: 269px;
+  font-size: 16px;
+}
+.pp .ppright ul li:nth-child(4) p {
+  display: block;
+  width: 270px;
+  height: 239px;
+  border: 1px dotted #fff;
+  color: #fff;
+  line-height: 35px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 20px;
+  margin: 15px;
+}
+.bt {
+  height: 150px;
+  background: #ffc001;
+  text-align: center;
+}
+.bt h4 {
+  font-size: 32px;
+  line-height: 85px;
+  color: #fff;
+  font-weight: bold;
+}
+.bt p {
+  font-size: 18px;
+  color: #fff;
+}
+.cx {
+  height: 1148px;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+.cx ul li {
+  float: left;
+  width: 260px;
+  height: 464px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 40px;
+}
+.cx ul li:nth-child(2),
+.cx ul li:nth-child(6) {
+  margin: 40px 53px 0;
+}
+.cx ul li:nth-child(3),
+.cx ul li:nth-child(7) {
+  margin-right: 53px;
+  margin-top: 40px;
+}
+.cx ul li p {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  width: 260px;
+  line-height: 40px;
+}
+.cx ul li b {
+  font-size: 24px;
+  color: #ffc001;
+}
+.footer {
+  height: 275px;
+  background: #414141;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+.footer ul {
+  width: 440px;
+  margin: 20px auto;
+}
+.footer ul li {
+  float: left;
+  width: 20%;
+}
+.footer ul li a {
+  color: #aaa;
+  font-size: 12px;
+  border-right: 1px solid #aaa;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.footer p {
+  clear: both;
+  line-height: 70px;
+  font-size: 12px;
+  color: #aaa;
+}
+.footer p a {
+  color: #aaa;
+}

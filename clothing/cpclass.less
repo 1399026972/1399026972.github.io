@@ -1,0 +1,197 @@
+@import "_css";
+body{
+.yahei();	
+}
+// nav开始
+.nav{
+	.hline(100px);
+	h1{
+		.fl();
+		.bold(true);
+		.size(30px);
+		.leftlogo{
+           .c(#ffc001);
+		}
+		.rightlogo{
+			.c(#ccc);
+			.ml(10px);
+		}
+	}
+	ul{
+		.fr();
+		li:hover>a,.cur a{
+			.c(#ffc001);
+		}
+		li{
+			.fl();
+			.t-c();
+			.w(120px);
+			>a{
+				.size(16px);
+				.c(#161616);
+			}
+		}
+		.textarea{
+			.p-r();
+			&:hover .area{
+              .d-b();
+			}
+			.area{
+				.z(2);
+				.p-a();
+				.l(0px);
+				.t(80px);
+				.d-b();
+				.w(120px);
+				.hline(50px);
+				.bg(#ffc001);
+				.d-n();
+				&:before{
+					.cnt();
+					.w(0);
+					.h(0);
+					.bd(5px solid  transparent);
+					.bd-b-c(#ffc001);
+					.p-a();
+					.t(-10px);
+					.l(50px);
+				}
+				a{
+					.c(#fff);
+				}
+			}
+		}
+	}
+}
+// nav结束
+// ban开始 
+      .ap{
+      	img{
+      		.w(100%)
+      	}
+      }
+//     ban结束
+// 品牌开始
+.pp{
+	.h(758px);
+	.size(0);
+	.bbox();
+	.pt(120px);
+	.ppleft{
+		.fl();
+		.w(540px);
+	}
+	.ppright{
+		ul{
+			li{
+				&:nth-child(4){
+					.bg(#ffc001);
+					.w(300px);
+					.h(269px);
+					.size(16px);
+					p{
+                       .d-b();
+                       .w(270px);
+                       .h(239px);
+                       .bd(1px dotted #fff);
+                       .c(#fff);
+                       .line(35px);
+                       .bbox();
+                       .pt(50px);
+                       .pl(20px);
+                       .m(15px)
+					}
+				}
+				.fl();
+			}
+		}
+	}
+}
+// 品牌结束
+// 促销开始
+// 标题开始
+.bt{
+	.h(150px);
+	.bg(#ffc001);
+	.t-c();
+	h4{
+		.size(32px);
+		.line(85px);
+		.c(#fff);
+		.bold(true);
+	}
+	p{
+		.size(18px);
+		.c(#fff);
+	}
+}
+// 标题结束
+.cx{
+	.h(1148px);
+	.bbox();
+	.pt(80px);
+	ul{
+		li{
+
+			&:nth-child(2),&:nth-child(6){
+				.m(40px 53px 0);
+			}
+			&:nth-child(3),&:nth-child(7){
+				.mr(53px);
+				.mt(40px)
+			}
+			.fl();
+			.w(260px);
+			.h(464px);
+			.t-l();
+			.ellipsis();
+			.mt(40px);
+			p{
+				.size(14px);
+				.c(#666);
+                .d-b();
+                .w(260px);
+                .line(40px);
+			}
+			b{
+				.size(24px);
+				.c(#ffc001);
+			}
+		}
+	}
+}
+// 促销结束
+// 脚部开始
+.footer{
+	.h(275px);
+	.bg(#414141);
+	.t-c();
+	.bbox();
+	.p(30px 0);
+	ul{
+		.w(440px);
+		.m(20px auto);
+		li{
+			.fl();
+			.w(20%);
+			
+			a{
+              .c(#aaa);
+              .size(12px);
+              .bd-r(1px solid #aaa);
+              .bbox();
+              .pr(20px);
+			}
+		}
+	}
+	p{
+		.clear();
+		.line(70px);
+		.size(12px);
+		.c(#aaa);
+		a{
+			.c(#aaa);
+		}
+	}
+}
+// 脚部结束

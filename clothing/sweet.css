@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/*新的基础样式*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 整站通用样式 全站兼容标准IE8+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft Yahei;
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+q {
+  quotes: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a img {
+  border: 0;
+}
+.common {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+input::-ms-clear {
+  display: none;
+}
+/*下边三个占位符一定不能写在一起，不然会失效*/
+:-moz-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+:focus,
+:invalid {
+  outline: none;
+}
+textarea {
+  resize: none !important;
+}
+.clearfix {
+  clear: both !important;
+  float: none !important;
+  zoom: 1\9;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+/*禁用*/
+.disabled,
+[disabled] {
+  cursor: not-allowed !important;
+}
+body {
+  font-family: Microsoft Yahei;
+}
+.nav {
+  height: 100px;
+  line-height: 100px;
+}
+.nav h1 {
+  float: left;
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav h1 .leftlogo {
+  color: #ffc001;
+}
+.nav h1 .rightlogo {
+  color: #ccc;
+  margin-left: 10px;
+}
+.nav ul {
+  float: right;
+}
+.nav ul li:hover > a,
+.nav ul .cur a {
+  color: #ffc001;
+}
+.nav ul li {
+  float: left;
+  text-align: center;
+  width: 120px;
+}
+.nav ul li > a {
+  font-size: 16px;
+  color: #161616;
+}
+.nav ul .textarea {
+  position: relative;
+}
+.nav ul .textarea:hover .area {
+  display: block;
+}
+.nav ul .textarea .area {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  display: block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  background: #ffc001;
+  display: none;
+}
+.nav ul .textarea .area:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #ffc001;
+  position: absolute;
+  top: -10px;
+  left: 50px;
+}
+.nav ul .textarea .area a {
+  color: #fff;
+}
+.ap img {
+  width: 100%;
+}
+.leis {
+  box-sizing: border-box;
+  padding-top: 120px;
+  height: 1083px;
+}
+.leis .leisleft {
+  width: 50%;
+  float: left;
+}
+.leis .leisright {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 100px;
+}
+.leis .leisright p {
+  line-height: 40px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+.leis .leisright a {
+  display: block;
+  width: 182px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #333;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+.leis .leisright img:last-child {
+  margin-left: -50px;
+}
+.sun {
+  height: 735px;
+}
+.sun .sunleft {
+  width: 40%;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+.sun .sunleft p {
+  line-height: 40px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 50px;
+}
+.sun .sunleft a {
+  display: block;
+  width: 182px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #333;
+  margin-bottom: 60px;
+}
+.sun .sunright {
+  width: 60%;
+  float: left;
+}
+.run {
+  height: 886px;
+}
+.run .runleft {
+  width: 50%;
+  float: left;
+}
+.run .runright {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.run .runright p {
+  line-height: 40px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 30px;
+}
+.run .runright a {
+  display: block;
+  width: 182px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #333;
+  margin-bottom: 60px;
+}
+.run .runright img {
+  margin-left: -50px;
+}
+.tm {
+  height: 713px;
+}
+.tm .tmleft {
+  float: left;
+  width: 28%;
+}
+.tm .tmleft p {
+  line-height: 78px;
+  font-size: 16px;
+  color: #333;
+}
+.tm .tmleft a {
+  display: block;
+  width: 182px;
+  height: 47px;
+  line-height: 47px;
+  text-align: center;
+  border: 1px solid #000;
+  color: #333;
+  margin-top: 10px;
+}
+.tm .tmright {
+  float: left;
+  width: 62%;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+.footer {
+  height: 275px;
+  background: #414141;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+.footer ul {
+  width: 440px;
+  margin: 20px auto;
+}
+.footer ul li {
+  float: left;
+  width: 20%;
+}
+.footer ul li a {
+  color: #aaa;
+  font-size: 12px;
+  border-right: 1px solid #aaa;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.footer p {
+  clear: both;
+  line-height: 70px;
+  font-size: 12px;
+  color: #aaa;
+}
+.footer p a {
+  color: #aaa;
+}

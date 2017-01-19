@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/*新的基础样式*/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 整站通用样式 全站兼容标准IE8+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft Yahei;
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+q {
+  quotes: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a img {
+  border: 0;
+}
+.common {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+input::-ms-clear {
+  display: none;
+}
+/*下边三个占位符一定不能写在一起，不然会失效*/
+:-moz-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+:-ms-input-placeholder {
+  color: #999;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+:focus,
+:invalid {
+  outline: none;
+}
+textarea {
+  resize: none !important;
+}
+.clearfix {
+  clear: both !important;
+  float: none !important;
+  zoom: 1\9;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+/*禁用*/
+.disabled,
+[disabled] {
+  cursor: not-allowed !important;
+}
+body {
+  font-family: Microsoft Yahei;
+}
+.nav {
+  height: 100px;
+  line-height: 100px;
+}
+.nav h1 {
+  float: left;
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav h1 .leftlogo {
+  color: #ffc001;
+}
+.nav h1 .rightlogo {
+  color: #ccc;
+  margin-left: 10px;
+}
+.nav ul {
+  float: right;
+}
+.nav ul li:hover > a,
+.nav ul .cur a {
+  color: #ffc001;
+}
+.nav ul li {
+  float: left;
+  text-align: center;
+  width: 120px;
+}
+.nav ul li > a {
+  font-size: 16px;
+  color: #161616;
+}
+.nav ul .textarea {
+  position: relative;
+}
+.nav ul .textarea:hover .area {
+  display: block;
+}
+.nav ul .textarea .area {
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  display: block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  background: #ffc001;
+  display: none;
+}
+.nav ul .textarea .area:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #ffc001;
+  position: absolute;
+  top: -10px;
+  left: 50px;
+}
+.nav ul .textarea .area a {
+  color: #fff;
+}
+.ap img {
+  width: 100%;
+}
+.bd {
+  height: 627px;
+  font-size: 14px;
+  color: #666;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+.bd form > div {
+  clear: both;
+}
+.bd form > div label {
+  float: left;
+  margin-left: 100px;
+  line-height: 34px;
+  width: 60px;
+}
+.bd form > div label:nth-child(1) {
+  margin-left: 0;
+}
+.bd form > div input {
+  float: left;
+  width: 198px;
+  height: 34px;
+  line-height: 34px;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.bd form > div span {
+  float: left;
+  line-height: 34px;
+  color: red;
+  padding-left: 5px;
+}
+.bd form > label {
+  float: left;
+  width: 60px;
+}
+.bd form textarea {
+  float: left;
+  width: 925px;
+  height: 80px;
+  resize: none;
+}
+.bd form img {
+  float: left;
+  margin-left: 30px;
+}
+.bd form input {
+  float: left;
+  width: 110px;
+  height: 34px;
+}
+.bd form label {
+  line-height: 34px;
+}
+.bd form button {
+  width: 219px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #ffad2b;
+  border: 0;
+  color: #fff;
+  margin-left: 60px;
+}
+.bd form p {
+  line-height: 30px;
+  margin: 10px 0 15px;
+}
+.bd form .area {
+  line-height: 80px;
+}
+.bd form .lyp {
+  margin-top: 30px;
+  border-bottom: 1px dotted #444;
+}
+.bd form .clearfix {
+  height: 20px;
+}
+.bd dl {
+  width: auto;
+  line-height: 32px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 18px 0;
+}
+.bd dl dt {
+  display: inline-block;
+  width: 78px;
+  height: 32px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+.bd dl input {
+  width: 49px;
+  height: 27px;
+}
+.bd dl dd {
+  display: inline-block;
+}
+.bd dl a {
+  display: inline-block;
+  width: 54px;
+  height: 27px;
+  line-height: 27px;
+  border: 1px solid #666;
+  box-sizing: border-box;
+  color: #666;
+  text-align: center;
+}
+.footer {
+  height: 275px;
+  background: #414141;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 0;
+}
+.footer ul {
+  width: 440px;
+  margin: 20px auto;
+}
+.footer ul li {
+  float: left;
+  width: 20%;
+}
+.footer ul li a {
+  color: #aaa;
+  font-size: 12px;
+  border-right: 1px solid #aaa;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.footer p {
+  clear: both;
+  line-height: 70px;
+  font-size: 12px;
+  color: #aaa;
+}
+.footer p a {
+  color: #aaa;
+}

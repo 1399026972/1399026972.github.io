@@ -1,0 +1,272 @@
+@import "_css";
+body{
+.yahei();	
+}
+// nav开始
+.nav{
+	.hline(100px);
+	h1{
+		.fl();
+		.bold(true);
+		.size(30px);
+		.leftlogo{
+           .c(#ffc001);
+		}
+		.rightlogo{
+			.c(#ccc);
+			.ml(10px);
+		}
+	}
+	ul{
+		.fr();
+		li:hover>a,.cur a{
+			.c(#ffc001);
+		}
+		li{
+			.fl();
+			.t-c();
+			.w(120px);
+			>a{
+				.size(16px);
+				.c(#161616);
+			}
+		}
+		.textarea{
+			.p-r();
+			&:hover .area{
+              .d-b();
+			}
+			.area{
+				.z(2);
+				.p-a();
+				.l(0px);
+				.t(80px);
+				.d-b();
+				.w(120px);
+				.hline(50px);
+				.bg(#ffc001);
+				.d-n();
+				&:before{
+					.cnt();
+					.w(0);
+					.h(0);
+					.bd(5px solid  transparent);
+					.bd-b-c(#ffc001);
+					.p-a();
+					.t(-10px);
+					.l(50px);
+				}
+				a{
+					.c(#fff);
+				}
+			}
+		}
+	}
+}
+// nav结束
+// ban开始
+.ap{
+	img{
+		.w(100%);
+	}
+}
+// ban结束
+// 同乐园开始
+.child{
+	.bg(url(images/gsbg.jpg));
+	.h(773px);
+	.t-c();
+	.bbox();
+	.pt(150px);
+	h3{
+		.size(38px);
+		.c(#ffc001);
+		.bold(true);
+		.line(70px);
+	}
+	p{
+		.size(14px);
+		.c(#666);
+		.line(42px);
+		.mt(50px);
+	}
+}
+// 同乐园结束
+// 品牌开始
+.pp{
+	.bbox();
+	.pt(130px);
+	.h(750px);
+	.ppleft{
+		.w(50%);
+		.fl();
+		&:hover{
+			@keyframes bg{
+			0%{
+				.opa(1);
+			}
+			50%{
+				.opa(.8);
+			}
+			100%{
+				.opa(1);
+			}
+		}
+		animation:bg 0.5s ;
+	   }
+
+	}
+	.ppright{
+		.w(50%);
+		.fl();
+		.bbox();
+		.pt(60px);
+		.pl(30px);
+		h3{
+			.c(#666);
+			.size(36px);
+			.line(65px);
+			.bold(true);
+		}
+		h4{
+			.size(36px);
+			.c(grey);
+			.line(80px);
+			// .bold(true);
+		}
+		p{
+			.w(485px);
+			.h(205px);
+			.d-b();
+			.bg(#7d92a5);
+			.size(14px);
+			.c(#fff);
+			.line(32px);
+			.bbox();
+			.p(40px 30px 0);
+			.mt(60px);
+		}
+
+	}
+}
+// 品牌结束
+// no1开始
+.no1{
+	.h(1254px);
+	.bg(url(images/gs8.jpg));
+	.common{
+		.bbox();
+		.p(120px 102px);
+		ul{
+			li{
+				.fl();
+				.w(50%);
+				.h(338px);
+				.t-c();
+				h3{
+					.size(30px);
+					.bold(true);
+					.line(70px);
+					.c(#333);
+					.mt(80px);
+				}
+				p{
+					.clear();
+					.size(18px);
+					.line(42px);
+					.c(#333);
+
+				}
+				span{
+					.d-b();
+					.w(38px);
+					.bd(1px solid #333);
+					.m(20px auto);
+				}
+			}
+		}
+		
+	}
+}
+// no1结束
+// 理念开始
+.ll{
+	.h(1204px);
+	.t-c();
+	.bbox();
+	.p(150px 80px);
+	h3{
+		.size(36px);
+		.c(#333);
+		.bold(true);
+		.line(80px);
+	}
+	span{
+		.d-b();
+		.h(55px);
+		.w(1px);
+		.bd-l(2px solid #333);
+		.m(20px auto 0);
+	}
+	>p{
+		.size(26px);
+		.c(#333);
+		.line(28px);
+		.mt(50px);
+	}
+	.llleft{
+		.w(50%);
+		.fl();
+		.bbox();
+		.pt(100px);
+
+	}
+	.llright{
+		.w(50%);
+		.fl();
+		.bbox();
+		.pt(130px);
+		p{
+			.c(#333);
+			.size(14px);
+			.line(35px);
+			.mt(30px);
+		}
+
+	}
+}
+// 理念结束
+// 脚部开始
+.footer{
+	.h(275px);
+	.bg(#414141);
+	.t-c();
+	.bbox();
+	.p(30px 0);
+	ul{
+		.w(440px);
+		.m(20px auto);
+		li{
+			.fl();
+			.w(20%);
+			
+			a{
+              .c(#aaa);
+              .size(12px);
+              .bd-r(1px solid #aaa);
+              .bbox();
+              .pr(20px);
+			}
+		}
+	}
+	p{
+		.clear();
+		.line(70px);
+		.size(12px);
+		.c(#aaa);
+		a{
+			.c(#aaa);
+		}
+	}
+}
+// 脚部结束
